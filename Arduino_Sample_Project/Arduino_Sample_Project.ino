@@ -72,6 +72,8 @@ void handleTraffic(WiFiClient client){
   time = millis();
 
   // Retrieve the data from the client
+    // (This needs to be in this method and not handleIncoming()
+    // to avoid the client status never getting refreshed.)
   String msg = client.readStringUntil('\n');
   msg.trim(); // Remove \n, \r, and spaces.
 
@@ -89,7 +91,8 @@ void handleTraffic(WiFiClient client){
 
 // Incoming client traffic
 void handleIncoming(String msg){
-  // VVV Defining functionality VVV
+  // Retrieving data from the client happens in the handleTraffic() method.
+
   Serial.println("Godot: " + msg);
 
   if (strToBool(msg)){
