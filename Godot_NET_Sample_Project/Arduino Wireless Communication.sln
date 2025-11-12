@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serre Game", "Serre Game.csproj", "{3276C3E4-8358-4A95-9634-C64B76E2AD51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arduino Wireless Communication", "Arduino Wireless Communication.csproj", "{3276C3E4-8358-4A95-9634-C64B76E2AD51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
